@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace LibAppOrzechowski.Controllers
 {
-    //kotdsfdsfsdf
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        //Testgit
+        //Test
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
