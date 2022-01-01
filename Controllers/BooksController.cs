@@ -9,7 +9,7 @@ namespace LibAppOrzechowski.Controllers
 {
   
 
-    public class BookController : Controller
+    public class BooksController : Controller
     {
         public IActionResult Random()
         {
@@ -18,9 +18,9 @@ namespace LibAppOrzechowski.Controllers
             
         }
 
-        public IActionResult Edit(int id)
+        public IActionResult Edit(int bookId)
         {
-            return Content("id=" + id);
+            return Content("id=" + bookId);
         }
 
         public IActionResult Index(int? pageIndex, string sortBy)
@@ -35,8 +35,12 @@ namespace LibAppOrzechowski.Controllers
                 sortBy = "Name";
             }
 
-            //return Content(String.Format("pageIndex={0}&sortby={1}",pageIndex,sortBy));
-            return Content($"pageIndex={pageIndex}&sortby={sortBy}");
+            return Content($"pageIndex={pageIndex}&sortBy={sortBy}");
+        }
+
+        public IActionResult ByReleaseDate(int year, int month)
+        {
+            return Content(year + "/" + month);
         }
 
 
