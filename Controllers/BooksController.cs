@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LibAppOrzechowski.Models;
+using LibAppOrzechowski.ViewModels;
+
 
 namespace LibAppOrzechowski.Controllers
 {
@@ -13,9 +15,26 @@ namespace LibAppOrzechowski.Controllers
     {
         public IActionResult Random()
         {
-            var firstBook = new Book() { Id = 1, Name = "English" };
-            return View(firstBook);
-            
+            var firstBook = new Book() { Name = "English" };
+
+            var customers = new List<Customer>
+            {
+                new Customer {Name = "Customer 1"},
+                new Customer {Name = "Customer 2"}
+            };
+
+            var viewModel = new RandomBookViewModel
+            {
+                Book = firstBook,
+                Customers = customers
+            };
+
+            return View(viewModel);
+
+
+
+
+
         }
 
         public IActionResult Edit(int bookId)
