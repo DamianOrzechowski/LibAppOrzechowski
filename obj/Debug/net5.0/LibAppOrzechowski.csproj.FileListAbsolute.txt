@@ -395,3 +395,5 @@ C:\Users\fujitsu\source\repos\LibAppOrzechowski\obj\Debug\net5.0\LibAppOrzechows
 C:\Users\fujitsu\source\repos\LibAppOrzechowski\obj\Debug\net5.0\Razor\Views\Books\Random.cshtml.g.cs
 C:\Users\fujitsu\source\repos\LibAppOrzechowski\obj\Debug\net5.0\Razor\Views\Books\Index.cshtml.g.cs
 C:\Users\fujitsu\source\repos\LibAppOrzechowski\obj\Debug\net5.0\Razor\Views\Shared\_NavBar.cshtml.g.cs
+C:\Users\fujitsu\source\repos\LibAppOrzechowski\obj\Debug\net5.0\Razor\Views\Customers\Details.cshtml.g.cs
+C:\Users\fujitsu\source\repos\LibAppOrzechowski\obj\Debug\net5.0\Razor\Views\Customers\Index.cshtml.g.cs
